@@ -55,13 +55,13 @@ This project provides an automated solution for installing Proxmox VE on Hetzner
 Execute this single command in the rescue system terminal:
 
 ```bash
-bash <(curl -sSL https://github.com/ariadata/proxmox-hetzner/raw/main/scripts/pve-install.sh)
+bash <(curl -sSL https://github.com/4vok3n/proxmox-hetzner-z1/raw/main/scripts/pve-install.sh)
 ```
 
 The script will:
 - Download the latest Proxmox VE ISO
 - Create an auto-installation configuration
-- Install Proxmox VE with RAID-1 ZFS configuration
+- Install Proxmox VE with RAID-Z ZFS configuration (For Standard SATA/SAS Drives, Not NVME Drive Designations)
 - Configure networking for both IPv4 and IPv6
 - Set up proper hostname and FQDN
 - Apply recommended system settings
